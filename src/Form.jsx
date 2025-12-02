@@ -21,7 +21,6 @@ export default function Form() {
   function handleChange(e) {
     const { name, value } = e.target;
 
-    // Formatação automática para telefone
     if (name === "telefone") {
       let num = value.replace(/\D/g, "");
       if (num.length > 11) num = num.slice(0, 11);
@@ -116,7 +115,7 @@ export default function Form() {
         <input name="time" placeholder="Seu time" onChange={handleChange} />
       </div>
 
-      <button type="submit">Enviar Informações ✨</button>
+      <button type="submit">Enviar Informações </button>
     </form>
   );
 }
